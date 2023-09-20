@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MenuAssets\ChessWelcomeMsg.png" />
+    <None Remove="MenuAssets\MenuButton.png" />
+    <None Remove="MenuAssets\MenuButtonToggle.png" />
+    <None Remove="MenuAssets\Roboto-Light.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChessCode\ChessCode.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MenuAssets\ChessWelcomeMsg.png" />
+    <Resource Include="MenuAssets\MenuButton.png" />
+    <Resource Include="MenuAssets\MenuButtonToggle.png" />
+    <Resource Include="MenuAssets\Roboto-Light.ttf" />
+  </ItemGroup>
+
+</Project>
