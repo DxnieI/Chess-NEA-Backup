@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\danie\Downloads\Chess NEA Backup\UI\App.xaml
-11407045341
+2-2049852905
 
-652486245
-196-264856916
-MainWindow.xaml;
+7-776369860
+195-1269537285
+Board.xaml;MainWindow.xaml;
 
-False
+True
 

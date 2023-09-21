@@ -46,103 +46,279 @@
         <!--Background color and curved corners on right side-->
         <Border Background="BurlyWood" CornerRadius="25"/>
         <!--Background welcoming logo-->
-        <Border  CornerRadius="25">
+        <Border x:Name="Welcome">
             <Border.Background>
-                <ImageBrush ImageSource="MenuAssets/ChessWelcomeMsg.png" Stretch="UniformToFill"/>
+                <ImageBrush ImageSource="MenuAssets/ChessWelcomeMsg.png" Stretch="UniformToFill"
+                            />
             </Border.Background>
-            <!--Navigation panel on the side-->
-            <Grid x:Name="navigation_panel" Background="#2E333A" Width="65" HorizontalAlignment="Left">
-                <StackPanel x:Name="Stack_panel">
-                    <!--Menu toggle button-->
-                    <Grid Height="90">
-                        <!--Menu text once button toggled-->
-                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="73,-20,0,0" Text="M E N U" Foreground="White"
+        </Border>
+        <!--Navigation panel on the side-->
+        <Grid x:Name="navigation_panel" Background="#2E333A" Width="65" HorizontalAlignment="Left">
+            <StackPanel x:Name="Stack_panel">
+                <!--Menu toggle button-->
+                <Grid Height="90">
+                    <!--Menu text once button toggled-->
+                    <TextBlock Grid.Row="1" Grid.Column="0" Margin="73,-20,0,0" Text="M E N U" Foreground="White"
                                FontSize="22" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center"
                                Style="{StaticResource font_style}">
                         <!--Shadow effects on text-->
-                            <TextBlock.Effect>
-                                <DropShadowEffect BlurRadius="10" ShadowDepth="1" Direction="-90" Color="White"/>
-                            </TextBlock.Effect>
-                        </TextBlock>
-                        <!--Toggle button-->
-                        <ToggleButton x:Name="Toggle_button" Grid.Column="0" Height="30" Width="30" Margin="18,-20,0,0"
+                        <TextBlock.Effect>
+                            <DropShadowEffect BlurRadius="10" ShadowDepth="1" Direction="-90" Color="White"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+                    <!--Toggle button-->
+                    <ToggleButton x:Name="Toggle_button" Grid.Column="0" Height="30" Width="30" Margin="18,-20,0,0"
                                   HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0"
                                   Style="{StaticResource toggle_button_style}">
-                            <!--Toggle button sprites-->
-                            <ToggleButton.Background>
-                                <ImageBrush ImageSource="MenuAssets/MenuButton.png" Stretch="None"/>
-                            </ToggleButton.Background>
-                            <!--Visibility of navigation panel-->
-                            <ToggleButton.Triggers>
-                                <!--checked toggle. revealing navigation panel-->
-                                <EventTrigger RoutedEvent="ToggleButton.Checked">
-                                    <BeginStoryboard>
-                                        <Storyboard x:Name="ShowStackPanel">
-                                            <DoubleAnimation Storyboard.TargetName="navigation_panel"
+                        <!--Toggle button sprites-->
+                        <ToggleButton.Background>
+                            <ImageBrush ImageSource="MenuAssets/MenuButton.png" Stretch="None"/>
+                        </ToggleButton.Background>
+                        <!--Visibility of navigation panel-->
+                        <ToggleButton.Triggers>
+                            <!--checked toggle. revealing navigation panel-->
+                            <EventTrigger RoutedEvent="ToggleButton.Checked">
+                                <BeginStoryboard>
+                                    <Storyboard x:Name="ShowStackPanel">
+                                        <DoubleAnimation Storyboard.TargetName="navigation_panel"
                                                          Storyboard.TargetProperty="Width" BeginTime="0:0:0"
                                                          From="65" To="180" Duration="0:0:0.3">
-                                            </DoubleAnimation>
-                                        </Storyboard>
-                                    </BeginStoryboard>
-                                </EventTrigger>
-                                <!--unchecked toggle. hiding navigation panel-->
-                                <EventTrigger RoutedEvent="ToggleButton.Unchecked">
-                                    <BeginStoryboard>
-                                        <Storyboard x:Name="HideStackPanel">
-                                            <DoubleAnimation Storyboard.TargetName="navigation_panel"
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <!--unchecked toggle. hiding navigation panel-->
+                            <EventTrigger RoutedEvent="ToggleButton.Unchecked">
+                                <BeginStoryboard>
+                                    <Storyboard x:Name="HideStackPanel">
+                                        <DoubleAnimation Storyboard.TargetName="navigation_panel"
                                                          Storyboard.TargetProperty="Width" BeginTime="0:0:0"
                                                          From="180" To="65" Duration="0:0:0.2">
-                                            </DoubleAnimation>
-                                        </Storyboard>
-                                    </BeginStoryboard>
-                                </EventTrigger>
-                            </ToggleButton.Triggers>
-                        </ToggleButton>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </ToggleButton.Triggers>
+                    </ToggleButton>
 
-                    </Grid>
+                </Grid>
 
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="85"/>
-                            <RowDefinition Height="85"/>
-                            <RowDefinition Height="85"/>
-                            <RowDefinition Height="85"/>
-                        </Grid.RowDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="85"/>
+                        <RowDefinition Height="85"/>
+                        <RowDefinition Height="85"/>
+                        <RowDefinition Height="85"/>
+                    </Grid.RowDefinitions>
 
-                        <!--Play, Rules and Settings buttons-->
-                        <Button x:Name="Play_btn" Grid.Row="0" Grid.Column="1" Margin="75,-20,0,0" Content="PLAY" Foreground="White"
+                    <!--Play, Rules and Settings buttons-->
+                    <Button x:Name="Play_btn" Grid.Row="0" Grid.Column="1" Margin="75,-20,0,0" Content="PLAY" Foreground="White"
                                FontSize="22" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center"
                                BorderThickness="0" Click="Play_btn_Click">
-                        </Button>
-                        <Button x:Name="Rules_btn" Grid.Row="1" Grid.Column="1" Margin="75,-20,0,0" Content="RULES" Foreground="White"
+                    </Button>
+                    <Button x:Name="Rules_btn" Grid.Row="1" Grid.Column="1" Margin="75,-20,0,0" Content="RULES" Foreground="White"
                                FontSize="22" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center"
                                BorderThickness="0" Click="Rules_btn_Click">
-                        </Button>
-                        <Button x:Name="Settings_btn" Grid.Row="2" Grid.Column="1" Margin="75,-20,0,0" Content="SETTINGS" Foreground="White"
+                    </Button>
+                    <Button x:Name="Settings_btn" Grid.Row="2" Grid.Column="1" Margin="75,-20,0,0" Content="SETTINGS" Foreground="White"
                                FontSize="20" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center"
                                BorderThickness="0" Click="Settings_btn_Click">
-                        </Button>
-                        <Button x:Name="Exit_btn" Grid.Row="3" Grid.Column="1" Margin="75,-20,0,0" Content="EXIT" Foreground="White"
+                    </Button>
+                    <Button x:Name="Exit_btn" Grid.Row="3" Grid.Column="1" Margin="75,-20,0,0" Content="EXIT" Foreground="White"
                                FontSize="22" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center"
                                BorderThickness="0" Click="Exit_btn_Click">
-                        </Button>
+                    </Button>
 
-                    </Grid>
+                </Grid>
 
-                    <!-- List view with menu list items -->
+                <!-- List view with menu list items -->
 
 
 
-                </StackPanel>
+            </StackPanel>
 
+        </Grid>
+
+
+
+
+
+
+        
+        <!--PLAY MENU-->
+        
+        <!--All the Play menu features-->
+        <Grid x:Name="PlayMenu" >
+            <Image Source="MenuAssets/Opponent!!.png" Width="400" Height="325" Grid.ColumnSpan="4" Grid.RowSpan="4" Margin="37,0,20,35" Grid.Row="1">
+
+            </Image>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Your Opponent:" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" FontSize="20" Margin="100,20,0,0"
+                       TextDecorations="Underline"/>
+            <TextBlock Text="GRANDMASTER KAJURAN!!!" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" FontSize="20" Margin="100,55,0,0"
+                       FontWeight="Bold"/>
+
+            <Button x:Name="play_btn" Grid.Column="4" Grid.Row="1" Content="Play" Click="play_btn_Click_1" Grid.ColumnSpan="2"/>
+
+        </Grid>
+
+
+
+
+
+
+
+
+        <!--RULES MENU-->
+
+        <!--All of the features in the RuleMenu-->
+        <Grid>
+            <Grid x:Name="RulesMenuPage1" Visibility="Collapsed">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="190"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="Rules:" FontSize="40" Style="{StaticResource font_style}"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="The player with the light pieces makes the first move."
+                       FontSize="25" Style="{StaticResource font_style}"/>
+                <TextBlock Grid.Row="3" Grid.Column="1" Text="Each player takes turns to make one move at a time."
+                       FontSize="25" Style="{StaticResource font_style}"/>
+                <TextBlock Grid.Row="4" Grid.Column="1" Text="Every piece moves in a different way:"
+                       FontSize="25" Style="{StaticResource font_style}"/>
+                <TextBlock Grid.Row="5" Grid.Column="1" Text="     -  Pawn: Moves only 1 square forward, (2 at start)"
+                       FontSize="25" Style="{StaticResource font_style}"/>
+                <TextBlock Grid.Row="6" Grid.Column="1" Text="     -  Rook: Moves any num horizontally and vertically"
+                       FontSize="25" Style="{StaticResource font_style}"/>
+                <TextBlock Grid.Row="7" Grid.Column="1" Text="     -  Knight: Moves in an 'L' Shape"
+                       FontSize="25" Style="{StaticResource font_style}"/>
             </Grid>
 
 
 
-        </Border>
+
+            <!--All of the buttons for the Rule Menu  -  (In a separate grid because of visibility issues)-->
+            <Grid x:Name="RuleMenuButtons" Visibility="Collapsed">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="190"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Button x:Name="LastPageBtn" Grid.Column="1" Grid.Row="8" Margin="0,0,507,0" Content="Last Page" Background = "Transparent"
+                    BorderThickness = "0" Click="LastPageBtn_Click"/>
+                <Button x:Name="NextPageBtn" Grid.Column="1" Grid.Row="8" Margin="300,0,205,0" Content="Next Page" Background = "Transparent"
+                    BorderThickness = "0" Click="NextPageBtn_Click"/>
+                <Button x:Name="Page1Btn" Grid.Column="1" Grid.Row="8" Margin="131,0,429,0" Content="1" Background = "Transparent"
+                    BorderThickness = "0" Click="Page1Btn_Click"/>
+                <Button x:Name="Page2Btn" Grid.Column="1" Grid.Row="9" Margin="220,0,340,0" Content="2" Background = "Transparent"
+                    BorderThickness = "0" Click="Page2Btn_Click"/>
+            </Grid>
+
+
+
+            <Grid x:Name="RulesMenuPage2" Visibility="Collapsed">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="190"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="Rules:" FontSize="40" Style="{StaticResource font_style}"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="    -  Queen: Moves in all directions any num of squares"
+               FontSize="25" Style="{StaticResource font_style}"/>
+                <TextBlock Grid.Row="3" Grid.Column="1" Text="    -  King: Moves in all directions by only 1 square"
+               FontSize="25" Style="{StaticResource font_style}"/>
+                <TextBlock Grid.Row="4" Grid.Column="1" Text="King is in check and no legal moves left = checkmate"
+               FontSize="25" Style="{StaticResource font_style}"/>
+                <TextBlock Grid.Row="5" Grid.Column="1" Text="King is in check, legal moves are left = Not checkmate"
+               FontSize="25" Style="{StaticResource font_style}"/>
+                <TextBlock Grid.Row="6" Grid.Column="1" Text="King not in check and no legal moves = Stalemate"
+               FontSize="25" Style="{StaticResource font_style}"/>
+            </Grid>
+        </Grid>
+
+
+
+
+
+        <!--SETTINGS MENU-->
+
+        <!--All of the settings features-->
+        <Grid x:Name="SettingsMenu" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="190"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="Settings:" FontSize="40" Style="{StaticResource font_style}"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Text=""/>
+
+
+
+        </Grid>
+
+
     </Grid>
 </UserControl>

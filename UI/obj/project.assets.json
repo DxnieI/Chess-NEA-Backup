@@ -11,22 +11,6 @@
         "runtime": {
           "bin/placeholder/ChessCode.dll": {}
         }
-      },
-      "Menu/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "ChessCode": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Menu.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Menu.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
       }
     }
   },
@@ -35,17 +19,11 @@
       "type": "project",
       "path": "../ChessCode/ChessCode.csproj",
       "msbuildProject": "../ChessCode/ChessCode.csproj"
-    },
-    "Menu/1.0.0": {
-      "type": "project",
-      "path": "../Menu/Menu.csproj",
-      "msbuildProject": "../Menu/Menu.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "ChessCode >= 1.0.0",
-      "Menu >= 1.0.0"
+      "ChessCode >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -77,9 +55,6 @@
           "projectReferences": {
             "C:\\Users\\danie\\Downloads\\Chess NEA Backup\\ChessCode\\ChessCode.csproj": {
               "projectPath": "C:\\Users\\danie\\Downloads\\Chess NEA Backup\\ChessCode\\ChessCode.csproj"
-            },
-            "C:\\Users\\danie\\Downloads\\Chess NEA Backup\\Menu\\Menu.csproj": {
-              "projectPath": "C:\\Users\\danie\\Downloads\\Chess NEA Backup\\Menu\\Menu.csproj"
             }
           }
         }

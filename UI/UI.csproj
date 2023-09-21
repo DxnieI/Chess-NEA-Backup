@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChessCode\ChessCode.csproj" />
-    <ProjectReference Include="..\Menu\Menu.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -11,6 +11,22 @@
         "runtime": {
           "bin/placeholder/ChessCode.dll": {}
         }
+      },
+      "UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ChessCode": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UI.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -19,11 +35,17 @@
       "type": "project",
       "path": "../ChessCode/ChessCode.csproj",
       "msbuildProject": "../ChessCode/ChessCode.csproj"
+    },
+    "UI/1.0.0": {
+      "type": "project",
+      "path": "../UI/UI.csproj",
+      "msbuildProject": "../UI/UI.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "ChessCode >= 1.0.0"
+      "ChessCode >= 1.0.0",
+      "UI >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -55,6 +77,9 @@
           "projectReferences": {
             "C:\\Users\\danie\\Downloads\\Chess NEA Backup\\ChessCode\\ChessCode.csproj": {
               "projectPath": "C:\\Users\\danie\\Downloads\\Chess NEA Backup\\ChessCode\\ChessCode.csproj"
+            },
+            "C:\\Users\\danie\\Downloads\\Chess NEA Backup\\UI\\UI.csproj": {
+              "projectPath": "C:\\Users\\danie\\Downloads\\Chess NEA Backup\\UI\\UI.csproj"
             }
           }
         }

@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChessCode\ChessCode.csproj" />
+    <ProjectReference Include="..\UI\UI.csproj" />
   </ItemGroup>
 
   <ItemGroup>
