@@ -56,3 +56,34 @@ D:\Chess NEA\Menu\obj\Debug\net6.0-windows\SettingsMenu.g.cs
 D:\Chess NEA\Menu\obj\Debug\net6.0-windows\PlayMenu.baml
 D:\Chess NEA\Menu\obj\Debug\net6.0-windows\RulesMenu.baml
 D:\Chess NEA\Menu\obj\Debug\net6.0-windows\SettingsMenu.baml
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\UI.deps.json
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\UI.runtimeconfig.json
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\UI.exe
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\Menu.exe
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\Menu.deps.json
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\Menu.runtimeconfig.json
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\Menu.dll
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\Menu.pdb
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\ChessCode.dll
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\UI.dll
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\ChessCode.pdb
+C:\Users\danie\Downloads\Chess NEA backup\Menu\bin\Debug\net6.0-windows\UI.pdb
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.csproj.AssemblyReference.cache
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\MainMenu.g.cs
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu_MarkupCompile.cache
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu_MarkupCompile.lref
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\MainMenu.baml
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.g.resources
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.AssemblyInfoInputs.cache
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.AssemblyInfo.cs
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.csproj.CoreCompileInputs.cache
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.csproj.CopyComplete
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.dll
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\refint\Menu.dll
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.pdb
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.genruntimeconfig.cache
+C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\ref\Menu.dll

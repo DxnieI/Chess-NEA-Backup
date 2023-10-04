@@ -1,18 +1,11 @@
-﻿using ChessCode;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+using ChessCode;
+using System.Windows.Shapes;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Linq;  
 
 namespace UI
 {
@@ -41,6 +34,10 @@ namespace UI
                     Image image = new Image();
                     pieceImages[r, f] = image;
                     grid_piece.Children.Add(image);
+
+                    Rectangle MoveHelping = new Rectangle();
+                    MoveHelp[r,f] = MoveHelping;
+                    grid_move_help.Children.Add(MoveHelping);
                 }
             }
         }
@@ -58,5 +55,93 @@ namespace UI
         }
 
         private Conditions conditions;
+
+
+        
+        private readonly Rectangle[,] MoveHelp = new Rectangle[8, 8];
+        private readonly Dictionary<Position, MoveLogic> moveTemp = new Dictionary<Position, MoveLogic>();
+        private Position selectedPosition = null;
+
+        private void TempMoves(IEnumerable<MoveLogic> moves)
+        {
+            moveTemp.Clear();
+
+            foreach (MoveLogic move in moves)
+            {
+                moveTemp[move.ToPosition] = move;
+            }
+        }
+
+        private void ShowHelpMoves()
+        {
+            Color colour = Color.FromArgb(255, 255, 204, 203);
+
+            foreach (Position toPosition in moveTemp.Keys)
+            {
+                MoveHelp[toPosition.Rank, toPosition.File].Fill = new SolidColorBrush(colour);
+            }
+        }
+
+        private void HideHelpMoves()
+        {
+            foreach (Position toPosition in moveTemp.Keys)
+            {
+                MoveHelp[toPosition.Rank, toPosition.File].Fill = Brushes.Transparent;
+            }
+        }
+
+        private void ExecuteMove(MoveLogic move)
+        {
+            conditions.MovePiece(move);
+            DrawingBoard(conditions.Board);
+        }
+
+        private Position ToSquarePosition(Point point)
+        {
+            double squareSize = grid_board.ActualWidth / 8;
+            int rank = (int)(point.Y / squareSize);
+            int file = (int)(point.X / squareSize);
+
+            return new Position(rank, file);
+        }
+
+        private void MovesForSelectedPosition(Position position)
+        {
+            IEnumerable<MoveLogic> moves = conditions.PiecesLegalMoves(position);
+
+            if (moves.Any())
+            {
+                selectedPosition = position;
+                TempMoves(moves);
+                ShowHelpMoves();
+            }
+        }
+
+        private void MoveToSelectedPosition(Position position)
+        {
+            selectedPosition = null;
+            HideHelpMoves();
+
+            if (moveTemp.TryGetValue(position, out MoveLogic move))
+            {
+                ExecuteMove(move);
+            }
+        }
+
+        private void grid_board_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Point point = e.GetPosition(grid_board);
+
+            Position position = ToSquarePosition(point);
+
+            if (selectedPosition == null)
+            {
+                MovesForSelectedPosition(position);
+            }
+            else
+            {
+                MoveToSelectedPosition(position);
+            }
+        }
     }
 }

@@ -9,11 +9,15 @@
 
     <!--Viewbox used so when the board scales, it stays a square 600 x 600-->
     <Viewbox>
-        <Grid x:Name="grid_board" Width="600" Height="600">
+        <Grid x:Name="grid_board" Width="600" Height="600" MouseDown="grid_board_MouseDown">
             <!--The chess board image-->
             <Grid.Background>
                 <ImageBrush ImageSource="Assets/ChessBoard.png"/>
             </Grid.Background>
+
+            <UniformGrid x:Name="grid_move_help" Rows="8" Columns="8">
+                
+            </UniformGrid>
 
             <!--Makes a cell on each square of the board-->
             <UniformGrid x:Name="grid_piece" Rows="8" Columns="8"

@@ -146,16 +146,15 @@
 
 
 
+        
 
 
         
         <!--PLAY MENU-->
         
         <!--All the Play menu features-->
-        <Grid x:Name="PlayMenu" >
-            <Image Source="MenuAssets/Opponent!!.png" Width="400" Height="325" Grid.ColumnSpan="4" Grid.RowSpan="4" Margin="37,0,20,35" Grid.Row="1">
-
-            </Image>
+        <Grid x:Name="PlayMenu" Visibility="Collapsed">
+            
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -174,12 +173,14 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Your Opponent:" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" FontSize="20" Margin="100,20,0,0"
+            <Image Source="MenuAssets/Opponent!.png" Width="400" Height="300" Grid.ColumnSpan="7" Grid.RowSpan="5" Margin="0,0,0,15"/>
+
+            <TextBlock Text="Your Opponent: " Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="5" FontSize="20" Margin="150,5,0,0"
                        TextDecorations="Underline"/>
-            <TextBlock Text="GRANDMASTER KAJURAN!!!" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" FontSize="20" Margin="100,55,0,0"
+            <TextBlock Text="GRANDMASTER KAJURAN!!!" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="5" FontSize="20" Margin="150,35,0,0"
                        FontWeight="Bold"/>
 
-            <Button x:Name="play_btn" Grid.Column="4" Grid.Row="1" Content="Play" Click="play_btn_Click_1" Grid.ColumnSpan="2"/>
+            <Button x:Name="play_btn" Grid.Column="2" Grid.Row="7" Content="Play" Click="play_btn_Click_1" Grid.ColumnSpan="3" Margin="0,15,0,15"/>
 
         </Grid>
 
@@ -314,11 +315,7 @@
 
             <TextBlock Grid.Row="1" Grid.Column="1" Text="Settings:" FontSize="40" Style="{StaticResource font_style}"/>
             <TextBlock Grid.Row="2" Grid.Column="1" Text=""/>
-
-
-
+            
         </Grid>
-
-
     </Grid>
 </UserControl>

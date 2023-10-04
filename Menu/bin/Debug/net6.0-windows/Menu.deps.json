@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Menu/1.0.0": {
+        "dependencies": {
+          "ChessCode": "1.0.0",
+          "UI": "1.0.0"
+        },
+        "runtime": {
+          "Menu.dll": {}
+        }
+      },
+      "ChessCode/1.0.0": {
+        "runtime": {
+          "ChessCode.dll": {}
+        }
+      },
+      "UI/1.0.0": {
+        "dependencies": {
+          "ChessCode": "1.0.0"
+        },
+        "runtime": {
+          "UI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Menu/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ChessCode/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

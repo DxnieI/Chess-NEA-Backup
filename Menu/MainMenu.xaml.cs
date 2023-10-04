@@ -34,6 +34,7 @@ namespace Menu
             SettingsMenu.Visibility = Visibility.Collapsed;
             RuleMenuButtons.Visibility = Visibility.Collapsed;
             RulesMenuPage2.Visibility = Visibility.Collapsed;
+            Toggle_button.IsChecked = false;
 
         }
 
@@ -44,6 +45,7 @@ namespace Menu
             PlayMenu.Visibility = Visibility.Collapsed;
             SettingsMenu.Visibility = Visibility.Collapsed;
             RuleMenuButtons.Visibility = Visibility.Visible;
+            Toggle_button.IsChecked = false;
 
         }
 
@@ -55,6 +57,7 @@ namespace Menu
             RulesMenuPage1.Visibility = Visibility.Collapsed;
             RuleMenuButtons.Visibility = Visibility.Collapsed;
             RulesMenuPage2.Visibility = Visibility.Collapsed;
+            Toggle_button.IsChecked = false;
 
         }
 
