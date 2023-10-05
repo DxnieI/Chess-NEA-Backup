@@ -12,11 +12,13 @@
         <Grid x:Name="grid_board" Width="600" Height="600" MouseDown="grid_board_MouseDown">
             <!--The chess board image-->
             <Grid.Background>
-                <ImageBrush ImageSource="Assets/ChessBoard.png"/>
+                <ImageBrush ImageSource="Assets/chessBoard (2).png" Stretch="Fill"/>
             </Grid.Background>
 
-            <UniformGrid x:Name="grid_move_help" Rows="8" Columns="8">
+            <UniformGrid x:Name="grid_move_help" Width="600" Height="600" Rows="8" Columns="8">
+
                 
+
             </UniformGrid>
 
             <!--Makes a cell on each square of the board-->

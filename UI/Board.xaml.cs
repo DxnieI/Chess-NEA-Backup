@@ -74,6 +74,7 @@ namespace UI
 
         private void ShowHelpMoves()
         {
+
             Color colour = Color.FromArgb(255, 255, 204, 203);
 
             foreach (Position toPosition in moveTemp.Keys)
