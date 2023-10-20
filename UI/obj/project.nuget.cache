@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mvHXbx1X1wBAcDIydmHg3JJZK7fm/LH0z85ntNMoWSN1eiKLeC1YRckkAUrg4DsTu9u3Zm6m1Y+AD11ir9ivLQ==",
+  "dgSpecHash": "Q5g1Inq48IdJI4iZavJt/SA+AuWqN4BgzghHb9pDI0PfB1M8FjqeP8raa0h+5dWGQ0PjFqmvxcSq+avQGEaeUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie\\Downloads\\Chess NEA Backup\\UI\\UI.csproj",
+  "projectFilePath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

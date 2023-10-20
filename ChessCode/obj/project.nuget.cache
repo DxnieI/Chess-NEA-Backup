@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RKLhpyu1SVJtwb4oEytLZDXy4kN0SiaiaCCLIdK4QTilCOHJM0r10rPMkie56I19Cppz5daXV5Ct01fhu00DhQ==",
+  "dgSpecHash": "fnX9wGD12C2Rn/x65oww2Y1FSw542FXESeVMPzmE3lVAi7hrB/V7srtX48nIIYuvYkMAYQeV5tzxltGWA54t6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie\\Downloads\\Chess NEA Backup\\ChessCode\\ChessCode.csproj",
+  "projectFilePath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

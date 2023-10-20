@@ -1,0 +1,92 @@
+﻿<Window x:Class="SQL_login.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SQL_login"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="544" Width="285" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <!--Register Screen-->
+        <Grid x:Name="Register_screen" Visibility="Visible">
+            <Label x:Name="Start_msg" Content="Get Started" Foreground="MediumPurple" FontFamily="MS UI Gothic" FontWeight="Bold"
+                   FontSize="20" Margin="28,68"/>
+
+            <Label Content="Username" Foreground="Gray" Margin="29,105,0,0" FontSize="12.5" />
+
+            <TextBox x:Name="Username_box" Width="216" Height="28" Margin="0,-255,0,0" FontFamily="MS UI Gothic" FontSize="16"
+                     Background="LightGray" BorderThickness="0" VerticalAlignment="Center" Padding="6"/>
+
+            <Label Content="Password" Foreground="Gray" Margin="29,180,0,0" />
+
+            <PasswordBox x:Name="Password_box" Width="216" Height="28" Margin="0,-102,0,0" FontFamily="MS UI Gothic" FontSize="16"
+                     Background="LightGray" BorderThickness="0" VerticalAlignment="Center" Padding="6" PasswordChar="*"/>
+
+            <TextBox x:Name="Show_password" Width="216" Height="28" Margin="0,-102,0,0" FontFamily="MS UI Gothic" FontSize="16"
+                     Background="LightGray" BorderThickness="0" VerticalAlignment="Center" Padding="6" Visibility="Collapsed"/>
+
+            <Label Content="Confirm Password" Foreground="Gray" Margin="29,255,0,0"/>
+
+            <PasswordBox x:Name="Confirm_password_box" Width="216" Height="28" Margin="0,51,0,0" FontFamily="MS UI Gothic" FontSize="16"
+                     Background="LightGray" BorderThickness="0" VerticalAlignment="Center" Padding="6" PasswordChar="*"/>
+
+            <TextBox x:Name="Show_Confirm_password" Width="216" Height="28" Margin="0,51,0,0" FontFamily="MS UI Gothic" FontSize="16"
+                     Background="LightGray" BorderThickness="0" VerticalAlignment="Center" Padding="6" Visibility="Collapsed"/>
+
+            <CheckBox x:Name="Show_pass_checkbox" Content="Show password" Foreground="Gray" Margin="116.5,105,0,0" Cursor="Hand" Width="105"
+                      Height="18" Checked="Show_pass_checkbox_Checked" Unchecked="Show_pass_checkbox_Unchecked"/>
+
+            <Button x:Name="Register_btn" Width="216" Height="35" Margin="0,200,0,0" BorderThickness="0" Cursor="Hand"
+                    Background="MediumPurple" Foreground="White" Content="R E G I S T E R"/>
+
+            <Button x:Name="Clear_btn" Width="216" Height="35" Margin="0,295,0,0" BorderThickness="0.5" Cursor="Hand"
+                    Background="White" Foreground="MediumPurple" Content="C L E A R" Click="Clear_btn_Click"/>
+
+            <Label Content="Already have an account?" Width="150" Height="25" Foreground="Gray" Margin="0,380,0,0" FontSize="12.5"/>
+
+            <Button x:Name="Log_in_btn" Width="100" Height="30" Content="Log in" Foreground="MediumPurple" Margin="0,450,0,0"
+                    BorderThickness="0" Cursor="Hand" Click="Log_in_btn_Click"/>
+
+
+        </Grid>
+        
+        <!--Log in screen-->
+        <Grid x:Name="Login_screen" Visibility="Collapsed">
+            <Label x:Name="Start2_msg" Content="Get Started" Foreground="MediumPurple" FontFamily="MS UI Gothic" FontWeight="Bold"
+           FontSize="20" Margin="28,68"/>
+
+            <Label Content="Username" Foreground="Gray" Margin="29,105,0,0" FontSize="12.5" />
+
+            <TextBox x:Name="Username2_box" Width="216" Height="28" Margin="0,-255,0,0" FontFamily="MS UI Gothic" FontSize="16"
+             Background="LightGray" BorderThickness="0" VerticalAlignment="Center" Padding="6"/>
+
+            <Label Content="Password" Foreground="Gray" Margin="29,180,0,0" />
+
+            <PasswordBox x:Name="Password2_box" Width="216" Height="28" Margin="0,-102,0,0" FontFamily="MS UI Gothic" FontSize="16"
+             Background="LightGray" BorderThickness="0" VerticalAlignment="Center" Padding="6" PasswordChar="*"/>
+
+            <TextBox x:Name="Show_Password2" Width="216" Height="28" Margin="0,-102,0,0" FontFamily="MS UI Gothic" FontSize="16"
+                     Background="LightGray" BorderThickness="0" VerticalAlignment="Center" Padding="6" Visibility="Collapsed"/>
+
+            <CheckBox x:Name="Show_pass2_checkbox" Content="Show password" Foreground="Gray" Margin="116.5,-48,0,0" Cursor="Hand" Width="105"
+                      Height="18" Checked="Show_pass2_checkbox_Checked" Unchecked="Show_pass2_checkbox_Unchecked"/>
+
+            <Button x:Name="Sign_in_btn" Width="216" Height="35" Margin="0,40,0,0" BorderThickness="0" Cursor="Hand"
+            Background="MediumPurple" Foreground="White" Content="S I G N  I N"/>
+
+            <Button x:Name="Clear2_btn" Width="216" Height="35" Margin="0,135,0,0" BorderThickness="0.5" Cursor="Hand"
+            Background="White" Foreground="MediumPurple" Content="C L E A R" Click="Clear2_btn_Click"/>
+
+            <Label Content="Don't have an account?" Width="150" Height="25" Foreground="Gray" Margin="0,240,0,0" FontSize="12.5"/>
+
+            <Button x:Name="Sign_up_btn" Width="100" Height="30" Content="Register" Foreground="MediumPurple" Margin="0,310,0,0"
+            BorderThickness="0" Cursor="Hand" Click="Sign_up_btn_Click"/>
+
+        </Grid>
+        
+        
+       
+    </Grid>
+    
+    
+</Window>

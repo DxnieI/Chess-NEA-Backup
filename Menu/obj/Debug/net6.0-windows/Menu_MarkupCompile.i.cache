@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\danie\Downloads\Chess NEA Backup\Menu\obj\Debug\net6.0-windows\
+C:\Users\danie\Source\Repos\Chess-NEA-Backup\Menu\obj\Debug\net6.0-windows\
 Menu
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\danie\Downloads\Chess NEA Backup\Menu\App.xaml
+C:\Users\danie\Source\Repos\Chess-NEA-Backup\Menu\App.xaml
 2425204786
 
 6-279564457
-19660087464
+196425751638
 MainMenu.xaml;MainWindow.xaml;
 
-True
+False
 

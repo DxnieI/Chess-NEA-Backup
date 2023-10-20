@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Board %282%29.png" />
-    <None Remove="Assets\chessBoard %282%29.png" />
+    <None Remove="Assets\Blue Board.png" />
     <None Remove="Assets\ChessLogooo.ico" />
     <None Remove="Assets\Chess_bdt60.png" />
     <None Remove="Assets\Chess_blt60.png" />
@@ -23,6 +22,8 @@
     <None Remove="Assets\Chess_qlt60.png" />
     <None Remove="Assets\Chess_rdt60.png" />
     <None Remove="Assets\Chess_rlt60.png" />
+    <None Remove="Assets\Custom made board.png" />
+    <None Remove="Assets\Red Board.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,8 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\Board (2).png" />
-    <Resource Include="Assets\chessBoard (2).png" />
+    <Resource Include="Assets\Blue Board.png" />
     <Resource Include="Assets\ChessLogooo.ico" />
     <Resource Include="Assets\Chess_bdt60.png" />
     <Resource Include="Assets\Chess_blt60.png" />
@@ -45,6 +45,8 @@
     <Resource Include="Assets\Chess_qlt60.png" />
     <Resource Include="Assets\Chess_rdt60.png" />
     <Resource Include="Assets\Chess_rlt60.png" />
+    <Resource Include="Assets\Custom made board.png" />
+    <Resource Include="Assets\Red Board.png" />
   </ItemGroup>
 
 </Project>
