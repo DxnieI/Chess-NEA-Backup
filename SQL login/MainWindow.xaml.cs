@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace SQL_login
 {
@@ -23,8 +25,6 @@ namespace SQL_login
         public MainWindow()
         {
             InitializeComponent();
-
-            String Password = Password_box.Password;
         }
 
         private void Log_in_btn_Click(object sender, RoutedEventArgs e)
@@ -45,7 +45,7 @@ namespace SQL_login
             Show_password.Visibility = Visibility.Visible;
             Password_box.Visibility = Visibility.Collapsed;
 
-            Show_Confirm_password.Text = Password_box.Password;
+            Show_Confirm_password.Text = Confirm_password_box.Password;
             Show_Confirm_password.Visibility = Visibility.Visible;
             Password_box.Visibility = Visibility.Collapsed;
         }
@@ -56,7 +56,7 @@ namespace SQL_login
             Password_box.Visibility = Visibility.Visible;
             Show_password.Visibility = Visibility.Collapsed;
 
-            Password_box.Password = Show_Confirm_password.Text;
+            Confirm_password_box.Password = Show_Confirm_password.Text;
             Password_box.Visibility = Visibility.Visible;
             Show_Confirm_password.Visibility = Visibility.Collapsed;
 
@@ -94,6 +94,91 @@ namespace SQL_login
             
         }
 
-        
+        private void Register_btn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string Username = Username_box.Text;
+                string InitialPassword = Password_box.Password;
+                string ConfirmPassword = Confirm_password_box.Password;
+
+                if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(InitialPassword) || string.IsNullOrEmpty(ConfirmPassword))
+                {
+                    MessageBox.Show("Please make sure you enter both a username and passwords.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                if (InitialPassword != ConfirmPassword)
+                {
+                    MessageBox.Show("Passwords do not match. Please re enter.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                MySqlConnection connection = new MySqlConnection(@"Server=localhost;Database=nea;UID=root;Password=Root");
+                connection.Open();
+
+                string adding_data = "INSERT INTO users (username, password) VALUES (@username, @password)";
+                MySqlCommand command = new MySqlCommand(adding_data, connection);
+
+                command.Parameters.AddWithValue("@username", Username);
+                command.Parameters.AddWithValue("@password", InitialPassword);
+                command.ExecuteNonQuery();
+
+                connection.Close();
+
+                MessageBox.Show("Registration Successful: Welcome!");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Registration failed: " + ex.Message);
+            }
+        }
+
+        private void Sign_in_btn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string Username = Username2_box.Text;
+                string Password = Password2_box.Password;
+
+                if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
+                {
+                    MessageBox.Show("Please make sure you enter both a username and passwords.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+
+                string connectionString = "Server=localhost;Database=nea;UID=root;Password=Root";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "SELECT username FROM users WHERE username = @username AND password = @password";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+
+                    command.Parameters.AddWithValue("@username", Username2_box.Text);
+                    command.Parameters.AddWithValue("@password", Password2_box.Password);
+
+                    // I used a nullable string becuase of a potential null result
+                    string? username = command.ExecuteScalar() as string;
+
+                    if (!string.IsNullOrEmpty(username))
+                    {
+                        MessageBox.Show("Welcome back, " + username);
+                        string loggedInUsername = username;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid username or password");
+                    }
+
+                    connection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Log in failed: " + ex.Message);
+            }
+        }
     }
 }

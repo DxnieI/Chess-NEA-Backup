@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj": {}
+    "D:\\Downloads\\NEAAA\\UI\\UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj": {
+    "D:\\Downloads\\NEAAA\\ChessCode\\ChessCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj",
+        "projectUniqueName": "D:\\Downloads\\NEAAA\\ChessCode\\ChessCode.csproj",
         "projectName": "ChessCode",
-        "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj",
+        "projectPath": "D:\\Downloads\\NEAAA\\ChessCode\\ChessCode.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\obj\\",
+        "outputPath": "D:\\Downloads\\NEAAA\\ChessCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,18 +65,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj": {
+    "D:\\Downloads\\NEAAA\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj",
+        "projectUniqueName": "D:\\Downloads\\NEAAA\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj",
+        "projectPath": "D:\\Downloads\\NEAAA\\UI\\UI.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\obj\\",
+        "outputPath": "D:\\Downloads\\NEAAA\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +93,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj": {
-                "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj"
+              "D:\\Downloads\\NEAAA\\ChessCode\\ChessCode.csproj": {
+                "projectPath": "D:\\Downloads\\NEAAA\\ChessCode\\ChessCode.csproj"
               }
             }
           }
@@ -98,6 +108,16 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -117,7 +137,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

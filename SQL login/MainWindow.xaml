@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:SQL_login"
         mc:Ignorable="d"
         Title="MainWindow" Height="544" Width="285" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    
     <Grid>
         <!--Register Screen-->
         <Grid x:Name="Register_screen" Visibility="Visible">
@@ -37,7 +38,7 @@
                       Height="18" Checked="Show_pass_checkbox_Checked" Unchecked="Show_pass_checkbox_Unchecked"/>
 
             <Button x:Name="Register_btn" Width="216" Height="35" Margin="0,200,0,0" BorderThickness="0" Cursor="Hand"
-                    Background="MediumPurple" Foreground="White" Content="R E G I S T E R"/>
+                    Background="MediumPurple" Foreground="White" Content="R E G I S T E R" Click="Register_btn_Click"/>
 
             <Button x:Name="Clear_btn" Width="216" Height="35" Margin="0,295,0,0" BorderThickness="0.5" Cursor="Hand"
                     Background="White" Foreground="MediumPurple" Content="C L E A R" Click="Clear_btn_Click"/>
@@ -72,7 +73,7 @@
                       Height="18" Checked="Show_pass2_checkbox_Checked" Unchecked="Show_pass2_checkbox_Unchecked"/>
 
             <Button x:Name="Sign_in_btn" Width="216" Height="35" Margin="0,40,0,0" BorderThickness="0" Cursor="Hand"
-            Background="MediumPurple" Foreground="White" Content="S I G N  I N"/>
+            Background="MediumPurple" Foreground="White" Content="S I G N  I N" Click="Sign_in_btn_Click"/>
 
             <Button x:Name="Clear2_btn" Width="216" Height="35" Margin="0,135,0,0" BorderThickness="0.5" Cursor="Hand"
             Background="White" Foreground="MediumPurple" Content="C L E A R" Click="Clear2_btn_Click"/>

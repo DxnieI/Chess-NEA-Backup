@@ -53,3 +53,29 @@ C:\Users\danie\Downloads\Chess NEA backup\UI\obj\Debug\net6.0-windows\refint\UI.
 C:\Users\danie\Downloads\Chess NEA backup\UI\obj\Debug\net6.0-windows\UI.pdb
 C:\Users\danie\Downloads\Chess NEA backup\UI\obj\Debug\net6.0-windows\UI.genruntimeconfig.cache
 C:\Users\danie\Downloads\Chess NEA backup\UI\obj\Debug\net6.0-windows\ref\UI.dll
+D:\Downloads\NEAAA\UI\bin\Debug\net6.0-windows\UI.exe
+D:\Downloads\NEAAA\UI\bin\Debug\net6.0-windows\UI.deps.json
+D:\Downloads\NEAAA\UI\bin\Debug\net6.0-windows\UI.runtimeconfig.json
+D:\Downloads\NEAAA\UI\bin\Debug\net6.0-windows\UI.dll
+D:\Downloads\NEAAA\UI\bin\Debug\net6.0-windows\UI.pdb
+D:\Downloads\NEAAA\UI\bin\Debug\net6.0-windows\ChessCode.dll
+D:\Downloads\NEAAA\UI\bin\Debug\net6.0-windows\ChessCode.pdb
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.csproj.AssemblyReference.cache
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\Board.g.cs
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\App.g.cs
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI_MarkupCompile.cache
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI_MarkupCompile.lref
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\Board.baml
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.g.resources
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.AssemblyInfoInputs.cache
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.AssemblyInfo.cs
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.csproj.CoreCompileInputs.cache
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.csproj.CopyComplete
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.dll
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\refint\UI.dll
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.pdb
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.genruntimeconfig.cache
+D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\ref\UI.dll

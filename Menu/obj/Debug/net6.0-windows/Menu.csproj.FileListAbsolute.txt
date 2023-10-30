@@ -87,3 +87,34 @@ C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\refint\M
 C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.pdb
 C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\Menu.genruntimeconfig.cache
 C:\Users\danie\Downloads\Chess NEA backup\Menu\obj\Debug\net6.0-windows\ref\Menu.dll
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\UI.deps.json
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\UI.runtimeconfig.json
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\UI.exe
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\Menu.exe
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\Menu.deps.json
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\Menu.runtimeconfig.json
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\Menu.dll
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\Menu.pdb
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\ChessCode.dll
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\UI.dll
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\ChessCode.pdb
+D:\Downloads\NEAAA\Menu\bin\Debug\net6.0-windows\UI.pdb
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu.csproj.AssemblyReference.cache
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\MainMenu.g.cs
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\App.g.cs
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu_MarkupCompile.cache
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu_MarkupCompile.lref
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\MainMenu.baml
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu.g.resources
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu.AssemblyInfoInputs.cache
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu.AssemblyInfo.cs
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu.csproj.CoreCompileInputs.cache
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu.csproj.CopyComplete
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu.dll
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\refint\Menu.dll
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu.pdb
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\Menu.genruntimeconfig.cache
+D:\Downloads\NEAAA\Menu\obj\Debug\net6.0-windows\ref\Menu.dll
