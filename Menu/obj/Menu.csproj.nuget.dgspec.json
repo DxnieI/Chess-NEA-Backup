@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\Menu\\Menu.csproj": {}
+    "D:\\Downloads\\Latest version NEA\\Menu\\Menu.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj": {
+    "D:\\Downloads\\Latest version NEA\\ChessCode\\ChessCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj",
+        "projectUniqueName": "D:\\Downloads\\Latest version NEA\\ChessCode\\ChessCode.csproj",
         "projectName": "ChessCode",
-        "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj",
+        "projectPath": "D:\\Downloads\\Latest version NEA\\ChessCode\\ChessCode.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\obj\\",
+        "outputPath": "D:\\Downloads\\Latest version NEA\\ChessCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,18 +55,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\Menu\\Menu.csproj": {
+    "D:\\Downloads\\Latest version NEA\\Menu\\Menu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\Menu\\Menu.csproj",
+        "projectUniqueName": "D:\\Downloads\\Latest version NEA\\Menu\\Menu.csproj",
         "projectName": "Menu",
-        "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\Menu\\Menu.csproj",
+        "projectPath": "D:\\Downloads\\Latest version NEA\\Menu\\Menu.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\Menu\\obj\\",
+        "outputPath": "D:\\Downloads\\Latest version NEA\\Menu\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,11 +83,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj": {
-                "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj"
+              "D:\\Downloads\\Latest version NEA\\ChessCode\\ChessCode.csproj": {
+                "projectPath": "D:\\Downloads\\Latest version NEA\\ChessCode\\ChessCode.csproj"
               },
-              "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj": {
-                "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj"
+              "D:\\Downloads\\Latest version NEA\\UI\\UI.csproj": {
+                "projectPath": "D:\\Downloads\\Latest version NEA\\UI\\UI.csproj"
               }
             }
           }
@@ -120,69 +120,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj",
-        "projectName": "UI",
-        "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj",
-        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0-windows"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0-windows7.0": {
-            "targetAlias": "net6.0-windows",
-            "projectReferences": {
-              "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj": {
-                "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

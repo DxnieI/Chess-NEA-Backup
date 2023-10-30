@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\danie\Downloads\Chess NEA Backup\UI\obj\Debug\net6.0-windows\
+D:\Downloads\Latest version NEA\UI\obj\Debug\net6.0-windows\
 UI
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\danie\Downloads\Chess NEA Backup\UI\App.xaml
+D:\Downloads\Latest version NEA\UI\App.xaml
 2-2049852905
 
 5693948961
-195-1269537285
+195-1237794409
 Board.xaml;MainWindow.xaml;
 
-False
+True
 

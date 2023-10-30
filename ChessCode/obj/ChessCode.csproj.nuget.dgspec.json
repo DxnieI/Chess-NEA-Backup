@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj": {}
+    "D:\\Downloads\\Latest version NEA\\ChessCode\\ChessCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj": {
+    "D:\\Downloads\\Latest version NEA\\ChessCode\\ChessCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj",
+        "projectUniqueName": "D:\\Downloads\\Latest version NEA\\ChessCode\\ChessCode.csproj",
         "projectName": "ChessCode",
-        "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj",
+        "projectPath": "D:\\Downloads\\Latest version NEA\\ChessCode\\ChessCode.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\obj\\",
+        "outputPath": "D:\\Downloads\\Latest version NEA\\ChessCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

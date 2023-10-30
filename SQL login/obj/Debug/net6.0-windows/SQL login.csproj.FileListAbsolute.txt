@@ -18,3 +18,23 @@ C:\Users\danie\Source\Repos\Chess-NEA-Backup\SQL login\obj\Debug\net6.0-windows\
 C:\Users\danie\Source\Repos\Chess-NEA-Backup\SQL login\obj\Debug\net6.0-windows\SQL login.pdb
 C:\Users\danie\Source\Repos\Chess-NEA-Backup\SQL login\obj\Debug\net6.0-windows\SQL login.genruntimeconfig.cache
 C:\Users\danie\Source\Repos\Chess-NEA-Backup\SQL login\obj\Debug\net6.0-windows\ref\SQL login.dll
+D:\Downloads\Latest version NEA\SQL login\bin\Debug\net6.0-windows\SQL login.exe
+D:\Downloads\Latest version NEA\SQL login\bin\Debug\net6.0-windows\SQL login.deps.json
+D:\Downloads\Latest version NEA\SQL login\bin\Debug\net6.0-windows\SQL login.runtimeconfig.json
+D:\Downloads\Latest version NEA\SQL login\bin\Debug\net6.0-windows\SQL login.dll
+D:\Downloads\Latest version NEA\SQL login\bin\Debug\net6.0-windows\SQL login.pdb
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\App.g.cs
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\SQL login_MarkupCompile.cache
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\SQL login_MarkupCompile.lref
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\SQL login.g.resources
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\SQL login.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\SQL login.AssemblyInfoInputs.cache
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\SQL login.AssemblyInfo.cs
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\SQL login.csproj.CoreCompileInputs.cache
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\SQL login.dll
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\refint\SQL login.dll
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\SQL login.pdb
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\SQL login.genruntimeconfig.cache
+D:\Downloads\Latest version NEA\SQL login\obj\Debug\net6.0-windows\ref\SQL login.dll

@@ -11,22 +11,6 @@
         "runtime": {
           "bin/placeholder/ChessCode.dll": {}
         }
-      },
-      "UI/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "ChessCode": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/UI.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/UI.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
       }
     }
   },
@@ -35,17 +19,12 @@
       "type": "project",
       "path": "../ChessCode/ChessCode.csproj",
       "msbuildProject": "../ChessCode/ChessCode.csproj"
-    },
-    "UI/1.0.0": {
-      "type": "project",
-      "path": "../UI/UI.csproj",
-      "msbuildProject": "../UI/UI.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "ChessCode >= 1.0.0",
-      "UI >= 1.0.0"
+      "D:\\Downloads\\Latest version NEA\\UI\\UI.csproj"
     ]
   },
   "packageFolders": {
@@ -54,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\Menu\\Menu.csproj",
+      "projectUniqueName": "D:\\Downloads\\Latest version NEA\\Menu\\Menu.csproj",
       "projectName": "Menu",
-      "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\Menu\\Menu.csproj",
+      "projectPath": "D:\\Downloads\\Latest version NEA\\Menu\\Menu.csproj",
       "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\Menu\\obj\\",
+      "outputPath": "D:\\Downloads\\Latest version NEA\\Menu\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -75,11 +54,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj": {
-              "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\ChessCode\\ChessCode.csproj"
+            "D:\\Downloads\\Latest version NEA\\ChessCode\\ChessCode.csproj": {
+              "projectPath": "D:\\Downloads\\Latest version NEA\\ChessCode\\ChessCode.csproj"
             },
-            "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj": {
-              "projectPath": "C:\\Users\\danie\\Source\\Repos\\Chess-NEA-Backup\\UI\\UI.csproj"
+            "D:\\Downloads\\Latest version NEA\\UI\\UI.csproj": {
+              "projectPath": "D:\\Downloads\\Latest version NEA\\UI\\UI.csproj"
             }
           }
         }
@@ -112,8 +91,19 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'D:\\Downloads\\Latest version NEA\\UI\\UI.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "D:\\Downloads\\Latest version NEA\\UI\\UI.csproj",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
