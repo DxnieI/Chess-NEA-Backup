@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -115,19 +116,32 @@ namespace SQL_login
                 }
 
                 MySqlConnection connection = new MySqlConnection(@"Server=localhost;Database=nea;UID=root;Password=Root");
-                connection.Open();
 
-                string adding_data = "INSERT INTO users (username, password) VALUES (@username, @password)";
-                MySqlCommand command = new MySqlCommand(adding_data, connection);
+                using (connection)
+                {
+                    connection.Open();
 
-                command.Parameters.AddWithValue("@username", Username);
-                command.Parameters.AddWithValue("@password", InitialPassword);
-                command.ExecuteNonQuery();
+                    string slowHashSalt = PasswordHashing.CreateHash(Password_box.Password);
+                    int Index = slowHashSalt.IndexOf(":");
+                    string extractedString = slowHashSalt.Substring(0, Index);
+                    Index = slowHashSalt.IndexOf(":");
+                    extractedString = slowHashSalt.Substring(++Index);
+                    Index = extractedString.IndexOf(":");
+                    Index = extractedString.IndexOf(":");
+                    extractedString = extractedString.Substring(++Index);
 
-                connection.Close();
+                    string saltQuery = "INSERT INTO users (username, slowHashSalt) VALUES (@username, @slowHashSalt)";
+                    MySqlCommand cmd = new MySqlCommand(saltQuery, connection);
 
-                MessageBox.Show("Registration Successful: Welcome!");
+                    cmd.Parameters.AddWithValue("@username", Username);
+                    cmd.Parameters.AddWithValue("@slowHashSalt", slowHashSalt);
 
+                    cmd.ExecuteReader();
+
+                    connection.Close();
+
+                    MessageBox.Show("Registration Successful: Welcome!");
+                }
             }
             catch (Exception ex)
             {
@@ -144,32 +158,38 @@ namespace SQL_login
 
                 if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
                 {
-                    MessageBox.Show("Please make sure you enter both a username and passwords.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Please make sure you enter both a username and password.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
-
 
                 string connectionString = "Server=localhost;Database=nea;UID=root;Password=Root";
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT username FROM users WHERE username = @username AND password = @password";
+                    string query = "SELECT slowHashSalt FROM users WHERE username = @username";
                     MySqlCommand command = new MySqlCommand(query, connection);
 
                     command.Parameters.AddWithValue("@username", Username2_box.Text);
-                    command.Parameters.AddWithValue("@password", Password2_box.Password);
 
-                    // I used a nullable string becuase of a potential null result
-                    string? username = command.ExecuteScalar() as string;
+                    // Retrieve the slow hash salt for the provided username
+                    string? slowHashSalt = command.ExecuteScalar() as string;
 
-                    if (!string.IsNullOrEmpty(username))
+                    if (!string.IsNullOrEmpty(slowHashSalt))
                     {
-                        MessageBox.Show("Welcome back, " + username);
-                        string loggedInUsername = username;
+                        // Use the VerifyPassword method to validate the provided password
+                        if (PasswordHashing.PasswordVerification(Password, slowHashSalt))
+                        {
+                            MessageBox.Show("Welcome back, " + Username);
+                            // You can proceed with user authentication here
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid password");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Invalid username or password");
+                        MessageBox.Show("Invalid username");
                     }
 
                     connection.Close();

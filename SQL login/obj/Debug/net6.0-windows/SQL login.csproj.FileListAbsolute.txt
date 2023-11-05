@@ -58,8 +58,6 @@ D:\Downloads\NEAAA\SQL login\obj\Debug\net6.0-windows\refint\SQL login.dll
 D:\Downloads\NEAAA\SQL login\obj\Debug\net6.0-windows\SQL login.pdb
 D:\Downloads\NEAAA\SQL login\obj\Debug\net6.0-windows\SQL login.genruntimeconfig.cache
 D:\Downloads\NEAAA\SQL login\obj\Debug\net6.0-windows\ref\SQL login.dll
-D:\Downloads\NEAAA\SQL login\obj\Debug\net6.0-windows\LoginRegister.g.cs
-D:\Downloads\NEAAA\SQL login\obj\Debug\net6.0-windows\LoginRegister.baml
 D:\Downloads\NEAAA\SQL login\bin\Debug\net6.0-windows\BouncyCastle.Cryptography.dll
 D:\Downloads\NEAAA\SQL login\bin\Debug\net6.0-windows\Google.Protobuf.dll
 D:\Downloads\NEAAA\SQL login\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
