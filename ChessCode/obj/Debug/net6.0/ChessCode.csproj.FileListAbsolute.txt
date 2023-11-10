@@ -42,3 +42,15 @@ D:\Downloads\NEAAA\ChessCode\obj\Debug\net6.0\ChessCode.dll
 D:\Downloads\NEAAA\ChessCode\obj\Debug\net6.0\refint\ChessCode.dll
 D:\Downloads\NEAAA\ChessCode\obj\Debug\net6.0\ChessCode.pdb
 D:\Downloads\NEAAA\ChessCode\obj\Debug\net6.0\ref\ChessCode.dll
+D:\Downloads\Latest NEA 2.0\ChessCode\bin\Debug\net6.0\ChessCode.deps.json
+D:\Downloads\Latest NEA 2.0\ChessCode\bin\Debug\net6.0\ChessCode.dll
+D:\Downloads\Latest NEA 2.0\ChessCode\bin\Debug\net6.0\ChessCode.pdb
+D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ChessCode.csproj.AssemblyReference.cache
+D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ChessCode.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ChessCode.AssemblyInfoInputs.cache
+D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ChessCode.AssemblyInfo.cs
+D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ChessCode.csproj.CoreCompileInputs.cache
+D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ChessCode.dll
+D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\refint\ChessCode.dll
+D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ChessCode.pdb
+D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ref\ChessCode.dll

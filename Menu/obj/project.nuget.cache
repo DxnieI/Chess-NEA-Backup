@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "20rZvS7PuRUAWxHX7zCTikciWn8oOnwylZsQtDwtOS4FXjkwU+XyKB/0KeCWCpA7adxkdx1+lvDkHTz3MWghwA==",
+  "dgSpecHash": "fRa+P0sN7ZuZToO5moHB4pqpZdxByKVZ8P/V5mA3ZtM4/hNirB09sAd0aun7YVn8BkikZLIzReltVtTZA5ImkA==",
   "success": true,
-  "projectFilePath": "D:\\Downloads\\NEAAA\\Menu\\Menu.csproj",
+  "projectFilePath": "D:\\Downloads\\Latest NEA 2.0\\Menu\\Menu.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",

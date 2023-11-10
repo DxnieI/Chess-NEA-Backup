@@ -1,24 +1,36 @@
-﻿using Org.BouncyCastle.Crypto.Generators;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace SQL_login
 {
-    
-
     class PasswordHashing
     {
         public const int SaltBytes = 32;
         public const int HashBytes = 32;
-        public const int pbkdf2Iterations = 600000;
+        public const int pbkdf2Iterations = 600000;  // More iteration increases security
         public const int IterationIndex = 1;
         public const int HashSizeIndex = 2;
         public const int SaltIndex = 3;
         public const int pbkdf2Index = 4;
+
+
+        private static byte[] Hashing_SHA256(string Value)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = Encoding.UTF8.GetBytes(Value);
+                return sha256.ComputeHash(bytes);
+            }
+        }
+
+        private static byte[] PBKDF2(string PreHashedPassword, byte[] salt, int iterations, int outputBytes)  // PBKDF is a Password based Key Derivation Function algorithm
+        {
+            using (Rfc2898DeriveBytes pbkdf2 = new Rfc2898DeriveBytes(PreHashedPassword, salt, iterations))   // The HMAC alogrithms default hashing algorithm is SHA1 so I implemented a SHA256 algorithm as it is more secure
+            {
+                return pbkdf2.GetBytes(outputBytes);
+            }
+        }
 
         public static string CreateHash(string password)
         {
@@ -26,9 +38,9 @@ namespace SQL_login
             byte[]? salt = new byte[SaltBytes];
             try
             {
-                using (RandomNumberGenerator CSPRNG = RandomNumberGenerator.Create())   // Cryptographically Secure Pseudo Random Number Generator
+                using (RandomNumberGenerator CSRNG = RandomNumberGenerator.Create())   // Cryptographically Secure Random Number Generator generates salt
                 {
-                    CSPRNG.GetBytes(salt);
+                    CSRNG.GetBytes(salt);
                 }
             }
             catch (CryptographicException ex)
@@ -36,53 +48,49 @@ namespace SQL_login
                 throw new Exception("", ex);
             }
 
+            byte[] PreHashedPassword = Hashing_SHA256(password);
 
-            byte[]? hash = PBKDF2(password, salt, pbkdf2Iterations, HashBytes);    // PBKDF is a Password based Key Derivation Function
+            byte[] hash = PBKDF2(Convert.ToBase64String(PreHashedPassword), salt, pbkdf2Iterations, HashBytes);
 
-            //            Algorithm  :     iterations      :  hashSize(bytes)  :             salt                   :                hash
+            //             Algorithm :     iterations      :  hashSize(bytes)  :             salt                   :                hash
             string parts = "sha256:" + pbkdf2Iterations + ":" + hash.Length + ":" + Convert.ToBase64String(salt) + ":" + Convert.ToBase64String(hash);
             return parts;
         }
 
-        public static bool PasswordVerification(string password, string goodHash)
-        {
-            char[] delimiter = { ':' };
-            string[] split = goodHash.Split(delimiter);
-
-            int iterations = 0;
-            iterations = Int32.Parse(split[IterationIndex]);
-
-            byte[]? salt = null;
-            salt = Convert.FromBase64String(split[SaltIndex]);
-
-            byte[]? hash = null;
-            hash = Convert.FromBase64String(split[pbkdf2Index]);
-
-            int storedHashSize = 0;
-            storedHashSize = Int32.Parse(split[HashSizeIndex]);
-
-            byte[]? testHash = PBKDF2(password, salt, iterations, hash.Length);
-            return SlowEquals(hash, testHash);
-        }
-
-
         // uint = 32 bit unsigned integer, can only store non negative integers, Ensures the result is not negative.
-        private static bool SlowEquals(byte[] a, byte[] b)
+        private static bool Diff(byte[] array1, byte[] array2)
         {
-            uint LengthDifference = (uint)a.Length ^ (uint)b.Length;             // XOR operator used calculates length difference between the arrays
-            for (int i = 0; i < a.Length && i < b.Length; i++)
+            uint LengthDifference = (uint)(array1.Length ^ (uint)array2.Length);             // XOR operator used calculates length difference between the arrays
+
+
+            for (int i = 0; i < array1.Length && i < array2.Length; i++)
             {
-                LengthDifference |= (uint)(a[i] ^ b[i]);    // Results in 0 if the two corresponding elements match, non zero if they dont match
+                LengthDifference |= (uint)(array1[i] ^ array2[i]);    // Results in 0 if the two corresponding elements match, non zero if they dont match
             }
             return LengthDifference == 0;  // Returns true if they match / false if they're different
         }
 
-        private static byte[] PBKDF2(string password, byte[] salt, int iterations, int outputBytes)
+        public static bool PasswordVerification(string password, string StoredPasswordHash)
         {
-            using (Rfc2898DeriveBytes pbkdf2 = new Rfc2898DeriveBytes(password, salt, iterations, HashAlgorithmName.SHA256))   // I changed the hashing algorithm from SHA1 to SHA256 as it is more secure
-            {
-                return pbkdf2.GetBytes(outputBytes);
-            }
+            char[] HashDelimiter = { ':' };
+            string[] Split = StoredPasswordHash.Split(HashDelimiter);  // The delimiter value is used to split the stored password hash into parts
+
+            int iterations = 0;
+            iterations = Int32.Parse(Split[IterationIndex]); // Parse converts the first and fouth part of the split to an integer
+
+            byte[]? salt = null;
+            salt = Convert.FromBase64String(Split[SaltIndex]);
+
+            byte[]? hash = null;
+            hash = Convert.FromBase64String(Split[pbkdf2Index]); // FromBase64String converts the second and third part of the split to a byte array
+
+            int storedHashSize = 0;
+            storedHashSize = Int32.Parse(Split[HashSizeIndex]);
+
+            byte[] PreHashedPassword = Hashing_SHA256(password);
+
+            byte[]? testHash = PBKDF2(Convert.ToBase64String(PreHashedPassword), salt, iterations, hash.Length);
+            return Diff(hash, testHash);
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hxNahPu6YwxGZnTe0lZpUFlhwTqQZLKQnBNKZ19Cn7W8jAf+YiBIzEDGii09gviDv81i7fVFw9EUjWtTLz08YA==",
+  "dgSpecHash": "ZrXf39kZzB3hkgWp/hL4yoEgAFo+vXM0fKP6OGIGVDfBUDfac+5V/1mH1gEEtwYqGTqCZQ+Q6ptTRZl7HwR/dQ==",
   "success": true,
-  "projectFilePath": "D:\\Downloads\\NEAAA\\SQL login\\SQL login.csproj",
+  "projectFilePath": "D:\\Downloads\\Latest NEA 2.0\\SQL login\\SQL login.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",

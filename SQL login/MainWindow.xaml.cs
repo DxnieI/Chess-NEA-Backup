@@ -180,7 +180,8 @@ namespace SQL_login
                         if (PasswordHashing.PasswordVerification(Password, slowHashSalt))
                         {
                             MessageBox.Show("Welcome back, " + Username);
-                            // You can proceed with user authentication here
+                            MenuScreen();
+
                         }
                         else
                         {
@@ -199,6 +200,17 @@ namespace SQL_login
             {
                 MessageBox.Show("Log in failed: " + ex.Message);
             }
+        }
+
+        public void MenuScreen()
+        {
+            Content = new Menu.MainMenu();
+            this.Width = 850;
+            this.Height = 500;
+            this.ResizeMode = ResizeMode.CanResize;
+
+            this.Left = (SystemParameters.PrimaryScreenWidth - this.Width) / 2;
+            this.Top = (SystemParameters.PrimaryScreenHeight - this.Height) / 2;
         }
     }
 }

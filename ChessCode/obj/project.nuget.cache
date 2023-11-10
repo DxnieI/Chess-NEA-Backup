@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3LANd6oek0DXLaCXyDqEvuqULoVc0vvFQqlNMkGd4fSTRE8ttO7C4CXV87W9WugsbYmSCgxkg2MgE1zDO95tvg==",
+  "dgSpecHash": "RHGvRpl1r2iSKllBMfwfP1GEjgOmD71wQtxjAIcVdLQypesLkX+J0ZMoyL0EqgO7UzRUZszgDq9eMhhWavvjGQ==",
   "success": true,
-  "projectFilePath": "D:\\Downloads\\NEAAA\\ChessCode\\ChessCode.csproj",
+  "projectFilePath": "D:\\Downloads\\Latest NEA 2.0\\ChessCode\\ChessCode.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",

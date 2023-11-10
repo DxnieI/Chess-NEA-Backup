@@ -79,3 +79,47 @@ D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\refint\UI.dll
 D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.pdb
 D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\UI.genruntimeconfig.cache
 D:\Downloads\NEAAA\UI\obj\Debug\net6.0-windows\ref\UI.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\UI.exe
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\UI.deps.json
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\UI.runtimeconfig.json
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\UI.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\UI.pdb
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\BouncyCastle.Cryptography.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\Google.Protobuf.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\MySql.Data.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\MySqlConnector.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\ZstdSharp.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\ChessCode.dll
+D:\Downloads\Latest NEA 2.0\UI\bin\Debug\net6.0-windows\ChessCode.pdb
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.csproj.AssemblyReference.cache
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\Board.g.cs
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\App.g.cs
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI_MarkupCompile.cache
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI_MarkupCompile.lref
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\Board.baml
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.g.resources
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.AssemblyInfoInputs.cache
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.AssemblyInfo.cs
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.csproj.CoreCompileInputs.cache
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.csproj.CopyComplete
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.dll
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\refint\UI.dll
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.pdb
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.genruntimeconfig.cache
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\ref\UI.dll
