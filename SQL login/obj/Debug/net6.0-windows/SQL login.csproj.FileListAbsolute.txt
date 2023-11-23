@@ -130,3 +130,4 @@ D:\Downloads\Latest NEA 2.0\SQL login\obj\Debug\net6.0-windows\refint\SQL login.
 D:\Downloads\Latest NEA 2.0\SQL login\obj\Debug\net6.0-windows\SQL login.pdb
 D:\Downloads\Latest NEA 2.0\SQL login\obj\Debug\net6.0-windows\SQL login.genruntimeconfig.cache
 D:\Downloads\Latest NEA 2.0\SQL login\obj\Debug\net6.0-windows\ref\SQL login.dll
+D:\Downloads\Latest NEA 2.0\SQL login\obj\Debug\net6.0-windows\SQL login.sourcelink.json

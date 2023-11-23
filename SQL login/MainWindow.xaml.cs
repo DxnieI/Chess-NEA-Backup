@@ -109,9 +109,21 @@ namespace SQL_login
                     return;
                 }
 
+                if (Username.Length >20 || InitialPassword.Length >20 || ConfirmPassword.Length >20)
+                {
+                    MessageBox.Show("Your Username or Password is too long", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
                 if (InitialPassword != ConfirmPassword)
                 {
                     MessageBox.Show("Passwords do not match. Please re enter.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                if (UsernameTaken(Username))
+                {
+                    MessageBox.Show("The Username is already taken", "warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
@@ -149,6 +161,8 @@ namespace SQL_login
             }
         }
 
+
+
         private void Sign_in_btn_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -159,6 +173,12 @@ namespace SQL_login
                 if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
                 {
                     MessageBox.Show("Please make sure you enter both a username and password.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                if (Username.Length > 20 || Password.Length > 20)
+                {
+                    MessageBox.Show("Your Username or Password is too long", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
@@ -201,6 +221,37 @@ namespace SQL_login
                 MessageBox.Show("Log in failed: " + ex.Message);
             }
         }
+
+
+
+        public bool UsernameTaken(string Username)
+        {
+            MySqlConnection connection = new MySqlConnection(@"Server=localhost;Database=nea;UID=root;Password=Root");
+
+            using (connection)
+            {
+                connection.Open();
+
+                string UsernameQuery = "SELECT UserID from users WHERE username = @username";
+                MySqlCommand cmd = new MySqlCommand(UsernameQuery, connection);
+
+                cmd.Parameters.AddWithValue("@username", Username);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        connection.Close();
+                        return true;
+                    }
+                }
+
+                connection.Close();
+                return false;
+            }
+        }
+
+
 
         public void MenuScreen()
         {

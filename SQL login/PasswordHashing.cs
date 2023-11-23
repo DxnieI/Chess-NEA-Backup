@@ -13,6 +13,7 @@ namespace SQL_login
         public const int HashSizeIndex = 2;
         public const int SaltIndex = 3;
         public const int pbkdf2Index = 4;
+        public const string Pepper = "YouCantHackMe";
 
 
         private static byte[] Hashing_SHA256(string Value)
@@ -24,16 +25,10 @@ namespace SQL_login
             }
         }
 
-        private static byte[] PBKDF2(string PreHashedPassword, byte[] salt, int iterations, int outputBytes)  // PBKDF is a Password based Key Derivation Function algorithm
-        {
-            using (Rfc2898DeriveBytes pbkdf2 = new Rfc2898DeriveBytes(PreHashedPassword, salt, iterations))   // The HMAC alogrithms default hashing algorithm is SHA1 so I implemented a SHA256 algorithm as it is more secure
-            {
-                return pbkdf2.GetBytes(outputBytes);
-            }
-        }
-
         public static string CreateHash(string password)
         {
+            string PepperedPassword = Pepper + password;  // I prepended the pepper to the password
+
             // Generate a random salt
             byte[]? salt = new byte[SaltBytes];
             try
@@ -48,7 +43,7 @@ namespace SQL_login
                 throw new Exception("", ex);
             }
 
-            byte[] PreHashedPassword = Hashing_SHA256(password);
+            byte[] PreHashedPassword = Hashing_SHA256(PepperedPassword);
 
             byte[] hash = PBKDF2(Convert.ToBase64String(PreHashedPassword), salt, pbkdf2Iterations, HashBytes);
 
@@ -56,6 +51,17 @@ namespace SQL_login
             string parts = "sha256:" + pbkdf2Iterations + ":" + hash.Length + ":" + Convert.ToBase64String(salt) + ":" + Convert.ToBase64String(hash);
             return parts;
         }
+
+        private static byte[] PBKDF2(string PreHashedPassword, byte[] salt, int iterations, int outputBytes)  // PBKDF is a Password based Key Derivation Function algorithm
+        {
+            using (Rfc2898DeriveBytes pbkdf2 = new Rfc2898DeriveBytes(PreHashedPassword, salt, iterations))   // The HMAC alogrithms default hashing algorithm is SHA1 so I implemented a SHA256 algorithm as it is more secure
+            {
+                return pbkdf2.GetBytes(outputBytes);
+            }
+        }
+
+
+
 
         // uint = 32 bit unsigned integer, can only store non negative integers, Ensures the result is not negative.
         private static bool Diff(byte[] array1, byte[] array2)
@@ -87,7 +93,9 @@ namespace SQL_login
             int storedHashSize = 0;
             storedHashSize = Int32.Parse(Split[HashSizeIndex]);
 
-            byte[] PreHashedPassword = Hashing_SHA256(password);
+            string PepperedPassword = Pepper + password;
+
+            byte[] PreHashedPassword = Hashing_SHA256(PepperedPassword);
 
             byte[]? testHash = PBKDF2(Convert.ToBase64String(PreHashedPassword), salt, iterations, hash.Length);
             return Diff(hash, testHash);

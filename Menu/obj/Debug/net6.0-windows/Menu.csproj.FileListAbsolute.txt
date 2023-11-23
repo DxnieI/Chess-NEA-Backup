@@ -167,3 +167,4 @@ D:\Downloads\Latest NEA 2.0\Menu\obj\Debug\net6.0-windows\refint\Menu.dll
 D:\Downloads\Latest NEA 2.0\Menu\obj\Debug\net6.0-windows\Menu.pdb
 D:\Downloads\Latest NEA 2.0\Menu\obj\Debug\net6.0-windows\Menu.genruntimeconfig.cache
 D:\Downloads\Latest NEA 2.0\Menu\obj\Debug\net6.0-windows\ref\Menu.dll
+D:\Downloads\Latest NEA 2.0\Menu\obj\Debug\net6.0-windows\Menu.sourcelink.json

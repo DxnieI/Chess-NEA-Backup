@@ -123,3 +123,4 @@ D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\refint\UI.dll
 D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.pdb
 D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.genruntimeconfig.cache
 D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\ref\UI.dll
+D:\Downloads\Latest NEA 2.0\UI\obj\Debug\net6.0-windows\UI.sourcelink.json

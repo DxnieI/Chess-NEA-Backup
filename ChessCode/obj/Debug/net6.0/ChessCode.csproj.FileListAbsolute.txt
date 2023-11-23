@@ -54,3 +54,4 @@ D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ChessCode.dll
 D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\refint\ChessCode.dll
 D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ChessCode.pdb
 D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ref\ChessCode.dll
+D:\Downloads\Latest NEA 2.0\ChessCode\obj\Debug\net6.0\ChessCode.sourcelink.json
